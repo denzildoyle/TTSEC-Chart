@@ -8,7 +8,7 @@
 	<style>
 		#canvas{
 			width: 100%;
-			height: 400px;
+			height: 200px;
 		}
 	</style>
 	<body data-ng-controller="chart">
@@ -22,7 +22,7 @@
 				var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 
 				$scope.chart = {
-					labels : ["January","February","March","April","May","June","July"],
+					labels : ["Jan","Feb","Mar","Apr","May","Jun"],
 					datasets : [
 						{
 							label: "My Second dataset",
@@ -32,7 +32,7 @@
 							pointStrokeColor : "#fff",
 							pointHighlightFill : "#fff",
 							pointHighlightStroke : "rgba(151,187,205,1)",
-							data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+							data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
 						}
 				    ],
 				};
